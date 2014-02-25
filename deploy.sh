@@ -1,13 +1,9 @@
 
 echo Handling node.js grunt deployment.
 
-# 1. Select node version
-selectNodeVersion
-
 # 2. Install npm packages
 if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
   eval npm install
-  exitWithMessageOnError "npm failed"
 fi
 
 # 3. Install bower packages
