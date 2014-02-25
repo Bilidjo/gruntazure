@@ -11,8 +11,6 @@ var express = require('express')
   , config = require('./config')()
   , azure = require('azure');
 
-
-
 var app = express();
 
 app.configure(function(){
